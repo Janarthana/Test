@@ -1,0 +1,36 @@
+<html>
+<head>
+
+<div align="center"><h1><font color="white"/>My page!</h1></div>
+<style>
+
+body{
+background-image: url("https://images.pexels.com/photos/984539/pexels-photo-984539.jpeg");
+background-size: 1580px 720px;
+}
+
+</style>
+
+</head>
+<body>
+<form>
+<input type="text" id="username" placeholder="username"/>
+<input type="password" id="password" placeholder="password"/>
+<input type="button" value="submit" onclick="javascript:verify()"/>
+</form>
+<script type="text/javascript">
+function verify(){
+if(document.getElementById("username").value=="admin" && document.getElementById("password").value == "12345")
+{
+alert("success");
+
+location.href="https://www.dailymail.co.uk/sport/teampages/chelsea.html/";
+}
+else
+{
+alert("re-check username or password");
+}
+}
+</script>
+</body>
+</html>
